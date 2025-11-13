@@ -1,0 +1,80 @@
+body{
+  font-family: 'Krona One';font-size: 22px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #00124e;
+  overflow: hidden;
+  align-content: center;
+  text-align: center;
+  
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #cde402;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(22, 10, 66);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #eefd16;
+  color: rgb(20, 19, 83);
+}
+
+#topnavbuttons {
+  width: fit-content;
+  height: 100%;
+  float: right;
+  align-items: center;
+  text-align: center;
+}
+
+#logo{ 
+  float: left;
+  color:#cde402;
+  text-align: center;
+}
+
+.button {
+  background-color: rgb(33, 4, 99);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-box{
+  width:20%;
+  padding:40px;
+  border-style: solid;
+  background: #0b0138;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  margin:auto;
+  margin-top:18rem;
+}
+
+.form-box h2 {
+  color: rgb(241, 255, 44);
+}
+
+.form-box p {
+  color: rgb(250, 246, 35);
+}

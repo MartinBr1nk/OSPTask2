@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>login page</title>
+        <link rel="stylesheet" href="mainstyle.css">
+
+    </head>
+
+    <body>
+
+        <div class = "form-box active" id="register-form">
+            <h2> Register</h2>
+            <input type ="text" name="name" placeholder="name" required>
+            <br>
+            <input type="password" name="password" placeholder="password" required>
+            <br>
+            <input type="dob" name="dateofbirth" placeholder="Date Of Birth (DD/MM/YYYY)" required>
+            <br>
+            <select name="role" required>
+                <option value="">--select role--</option>
+                <option value="premium">Premium</option>
+                <option value="Non-Premium">Non-Premium</option>
+            </select>
+            <p> already have an account?<a href = "login.html"> log in</a></p>
+            <button type="submit" name="register">Register</button>
+        </div>
+    </body>
+</html>
