@@ -48,17 +48,26 @@ body{
   text-align: center;
 }
 
-.button {
-  background-color: rgb(33, 4, 99);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+button{
+  width: 50%;
+  padding: 6px;
+  background: #7494ec;
+  border-radius: 6px;
+  border:none;
   cursor: pointer;
+  font-size:16px;
+  color: #fff;
+  font-weight: 500px;
+  margin-bottom:20px;
+  transition:1s;
+
 }
+button:hover{
+  background:#171f36;
+  box-shadow: 0 0 10px rgb(255, 0, 221);
+  padding: 15%
+}
+
 
 .form-box{
   width:20%;
@@ -78,3 +87,4 @@ body{
 .form-box p {
   color: rgb(250, 246, 35);
 }
+

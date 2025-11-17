@@ -30,7 +30,7 @@ body {
   transition: color 0.3s;
 }
 .navbar a:hover {
-  color: #eb784b;
+  color: #0f0066;
 }
 .nav-links {
   list-style: none;
@@ -46,13 +46,13 @@ body {
 }
 
 .nav-links a:hover {
-  color: #eb784b;
+  color: #090057;
 }
 
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #508c49, #eb784b);
+  background: linear-gradient(135deg, #00124e, #fde400);
   color: white;
 }
 
@@ -109,7 +109,7 @@ th, td {
 }
 
 th {
-  background: linear-gradient(90deg, #508c49, #eb784b,  #508c49);;
+  background: linear-gradient(90deg, #04003b, #fbff00,  #0a0046);;
   color: white;
   text-transform: uppercase;
 }
