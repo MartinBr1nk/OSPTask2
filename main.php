@@ -23,13 +23,13 @@
                 <a href="#fitness portal">Fitness Portal</a>
                 <a href="videoapi.html">Fitness Videos</a>
                 <a href="api.html">My Diet Log</a>
-                <a href="#The Social">The Social</a>
+                <a href="socialpage.php">The Social</a>
             </p>
             <p style="color: white;"> From Fitness Advice to Diet Goals, We help you Keep Fit</p>
         </div>
         <div class="center">
             <a href="login.php"><button type="button"> Log In</button> </a>
-            <a href="signup.html"><button type="button"> Sign Up</button></a>
+            <a href="signup.php"><button type="button"> Sign Up</button></a>
         </div>
     </div>
 </body>

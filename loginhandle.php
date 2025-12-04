@@ -56,6 +56,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             echo $_SESSION['account_name'] .'<br>';
             $_SESSION["account_id"] = $matchResult['id'];
             echo $_SESSION['account_id'] .'<br>';
+            $_SESSION['Membership'] = $matchResult['Membership'];
             //finish session write
             echo "SESSIONS" . "<BR>";
             
@@ -70,7 +71,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             echo"here is error";
             $errors["incorrect_password"] = "The password you entered is incorrect.";
             $_SESSION["errors_login"] = $errors;
-            header("location: ../OSPTask2/main.php");
+            header("location: ../OSPTask2/login.php");
         }
         }
     catch (PDOException $e){

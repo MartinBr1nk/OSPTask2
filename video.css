@@ -1,5 +1,10 @@
 body{
   font-family: 'Krona One';font-size: 22px;
+  color:white;
+                background-image: url('https://cdn.discordapp.com/attachments/1282670009868357682/1446106350638731344/3d-blue-yellow-techno-abstract-background-free-photo.png?ex=6932c6fd&is=6931757d&hm=9b78e19a94a47cb5375a223a8c8f3678182d152092f875489c398faf6a60c98a&');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
 }
 
 /* Add a black background color to the top navigation */
@@ -48,62 +53,11 @@ body{
   text-align: center;
 }
 
-.center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 840px;
-            border:#eefd16 3px solid ;
-        }
-
-
-button{
-  display: flex;
-  width: 200px;
-  padding: 16px;
-  background: #7494ec;
-  border-radius: 50px;
-  border:none;
-  cursor: pointer;
-  font-size:16px;
-  color: #fff;
-  font-weight: 10px;
-  margin-bottom:10px;
-  transition:1s;
-  
-  justify-content: center;
-}
-button:hover{
-  background:#0d084c;
-  box-shadow: 0 0 2px rgb(239, 255, 12);
-  
-}
-
-
-.form-box{
-  width:20%;
-  padding:40px;
-  border-style: solid;
-  background: #0b0138;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
-  margin:auto;
-  margin-top:18rem;
-}
-
-.form-box h2 {
-  color: rgb(241, 255, 44);
-}
-
-.form-box p {
-  color: rgb(250, 246, 35);
-}
-
 .cool_box {
   background-color: rgba(0,0,0,0.7);
   backdrop-filter: blur(0.7vw);
   border: solid #fff 2px ;
-  height: 95vh;
+  height: 125vh;
 }
 
 .welcome_box {
@@ -113,14 +67,3 @@ button:hover{
   height:95vh ;
 }
 
-.manage-box{
-  width:20%;
-  padding:40px;
-  border-style: solid;
-  background: #0b0138;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
-  margin:auto;
-  margin-top:18rem;
-  
-}

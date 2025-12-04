@@ -1,6 +1,9 @@
 <?php
 require_once 'config.php';
-session_start();
+if ($_SESSION ['account_loggedin'] == TRUE) {
+    header("Location:loginwelcome.php");
+    exit();
+}
 ?>
 
 
@@ -32,7 +35,7 @@ session_start();
             <a href="#fitness portal">Fitness Portal</a>
             <a href="videoapi.html">Fitness Videos</a>
             <a href="api.html">My Diet Log</a>
-            <a href="#The Social">The Social</a>
+            <a href="socialpage.php">The Social</a>
         </p>
     </div>
     <div class="container">
@@ -45,13 +48,13 @@ session_start();
                 <br>
                 <input type="password" name="password" placeholder="password" required>
                 <br>
-                <p> Dont have an account? <a href="signup.html">sign up </a></p>
+                <p> Dont have an account? <a href="signup.php">sign up </a></p>
                 <button type="submit" name="login">login</button>
             </form>
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+
 </body>
 
 </html>

@@ -11,7 +11,7 @@ session_set_cookie_params([
     'lifetime' => 1800, //1800seconds, 30 minutes
     'domain' => 'localhost', //cookies only valid for this domain, localhost/or whatever domain u have
     'path' => '', //cookies valid within this path,/ is also accept, please change this to your directory
-    'secure' => true, //true if using https, false for localhost
+    'secure' => false, //true if using https, false for localhost
     'httponly' => true //prevents javascript access to cookies
 ]);
 

@@ -1,3 +1,12 @@
+<?php
+require_once 'config.php';
+session_start();
+if ($_SESSION ['account_loggedin'] == TRUE) {
+    header("Location:loginwelcome.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -24,7 +33,7 @@
                 <a href="#fitness portal">Fitness Portal</a>
                 <a href="videoapi.html">Fitness Videos</a>
                 <a href="api.html">My Diet Log</a>
-                <a href="#The Social">The Social</a>
+                <a href="">The Social</a>
             </p>
         </div>
 
@@ -39,10 +48,10 @@
                 <br>
                 <input type="date" name="DOB" placeholder="Date Of Birth (DD/MM/YYYY)" required>
                 <br>
-                <input value="1" type="checkbox" name="Membership" placeholder="Membership" required>
+                <input type="checkbox" name="Membership" placeholder="Membership" value="0 required">
 
                 <p> already have an account?<a href = "login.php"> log in</a></p>
-                <button type="submit" name="register">Register</button>
+                <button onclick="alert('success!')" type="submit" name="submit">Register</button>
             </form>
         </div>
     </body>

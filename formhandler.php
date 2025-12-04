@@ -31,6 +31,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         exit();
     }
     
+    $IsPremium = 0;
+    if(isset($_POST["Membership"])){
+        $IsPremium = 1;
+    }
+    else{$IsPremium = 0;}
+
+
+
     try{
         require_once 'databaseHandler.php';
         //This links the $pdo object from databaseHandler.php
@@ -43,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt->bindParam(":username",$username);
         $stmt->bindParam(":email",$email);
         $stmt->bindParam(":DOB",$DOB);
-        $stmt->bindParam(":Membership",$Membership);   
+        $stmt->bindParam(":Membership",$IsPremium);   
         $stmt->bindParam(":pass",$pass);     
         //Execute the statement, passing in the variables to replace the ? in the SQL statement
         $stmt->execute();
