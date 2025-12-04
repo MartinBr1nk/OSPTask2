@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Krona One' rel='stylesheet'>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>login page</title>
@@ -18,30 +19,31 @@
 
     <body>
         <div class="topnav">
-            <p id="logo"><a href="main.html"> Toka Fitness</a></p>
+            <p id="logo"><a href="main.php"> Toka Fitness</a></p>
             <p id="topnavbuttons">
                 <a href="#fitness portal">Fitness Portal</a>
-                <a href="#fitness vids">Fitness Videos</a>
+                <a href="videoapi.html">Fitness Videos</a>
                 <a href="api.html">My Diet Log</a>
                 <a href="#The Social">The Social</a>
             </p>
         </div>
 
         <div class = "form-box active" id="register-form">
-            <h2> Register</h2>
-            <input type ="text" name="name" placeholder="name" required>
-            <br>
-            <input type="password" name="password" placeholder="password" required>
-            <br>
-            <input type="dob" name="dateofbirth" placeholder="Date Of Birth (DD/MM/YYYY)" required>
-            <br>
-            <select name="role" required>
-                <option value="">--select role--</option>
-                <option value="premium">Premium</option>
-                <option value="Non-Premium">Non-Premium</option>
-            </select>
-            <p> already have an account?<a href = "login.html"> log in</a></p>
-            <button type="submit" name="register">Register</button>
+            <form action="formhandler.php" method="post">
+                <h2> Register</h2>
+                <input type ="text" name="username" placeholder="username" required>
+                <br>
+                <input type ="text" name="email" placeholder="email" required>
+                <br>
+                <input type="text" name="password" placeholder="password" required>
+                <br>
+                <input type="date" name="DOB" placeholder="Date Of Birth (DD/MM/YYYY)" required>
+                <br>
+                <input value="1" type="checkbox" name="Membership" placeholder="Membership" required>
+
+                <p> already have an account?<a href = "login.php"> log in</a></p>
+                <button type="submit" name="register">Register</button>
+            </form>
         </div>
     </body>
 </html>
