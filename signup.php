@@ -13,7 +13,7 @@ if ($_SESSION ['account_loggedin'] == TRUE) {
         <link href='https://fonts.googleapis.com/css?family=Krona One' rel='stylesheet'>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>login page</title>
+        <title>sign-up page</title>
         <link rel="stylesheet" href="mainstyle.css">
         <style>
             body{ 
@@ -48,7 +48,7 @@ if ($_SESSION ['account_loggedin'] == TRUE) {
                 <br>
                 <input type="date" name="DOB" placeholder="Date Of Birth (DD/MM/YYYY)" required>
                 <br>
-                <input type="checkbox" name="Membership" placeholder="Membership" value="0 required">
+                <input type="checkbox" name="Membership" placeholder="Membership" value="1">
 
                 <p> already have an account?<a href = "login.php"> log in</a></p>
                 <button onclick="alert('success!')" type="submit" name="submit">Register</button>

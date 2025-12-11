@@ -25,10 +25,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         header("location: ../OSPTask2/main.php");
         exit();
     }
-    $Membership = htmlspecialchars($_POST['Membership']);
+    $Membership =($_POST['Membership']);
+    echo $Membership ."Membership Value";
     if(empty($Membership)){
-        header("location: ../OSPTask2/main.php");
-        exit();
+       echo"membership empty";
     }
     
     $IsPremium = 0;
@@ -59,20 +59,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt = null;
         $pdo = null;
         //Return to homepage after submission
-        header("Location: ../OSPTask2/main.php");
+       header("Location: ../OSPTask2/main.php");
         //exit the script, exit() or die() works the same way. die() closes connection.
         die();
 
     } catch (PDOException $e){
         die("Could not connect to the database:" . $e->getMessage());
     }
+    echo"try catch failed";
 
-
-    header("Location: ../OSPTask2/main.php");
+    //header("Location: ../OSPTask2/main.php");
 }
 
 else{
     //No POST method or illegal access, redirect
-    header("Location: ../OSPTask2/main.php");
+    //header("Location: ../OSPTask2/main.php");
+    echo"request invalid";
     
 }

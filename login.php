@@ -44,8 +44,6 @@ if ($_SESSION ['account_loggedin'] == TRUE) {
                 <h2>Login</h2>
                 <input type="text" name="username" placeholder="Username" required>
                 <br>
-                <input type="email" name="email" placeholder="email" required>
-                <br>
                 <input type="password" name="password" placeholder="password" required>
                 <br>
                 <p> Dont have an account? <a href="signup.php">sign up </a></p>
