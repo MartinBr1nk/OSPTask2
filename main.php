@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="mainstyle.css">
     <link href='https://fonts.googleapis.com/css?family=Krona One' rel='stylesheet'>
     <style>
-       body{ background-image: url('https://res-3.cloudinary.com/gll/image/upload/v1713880875/xta04aksf7jzgo9vq759.jpg');}
+       body{ background-image: url('https://pixabay.com/photos/weights-gym-dumbbell-gray-gym-3942914/https://pixabay.com/photos/weights-gym-dumbbell-gray-gym-3942914/');}
     </style>
 </head>
 
@@ -20,7 +20,7 @@
         <div class="topnav">
             <p id="logo"><a href="main.php"> Toka Fitness</a></p>
             <p id="topnavbuttons">
-                <a href="fitportalthing.html">Fitness Portal</a>
+                <a href="#fitness portal">Fitness Portal</a>
                 <a href="videoapi.html">Fitness Videos</a>
                 <a href="api.html">My Diet Log</a>
                 <a href="socialpage.php">The Social</a>

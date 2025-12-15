@@ -12,7 +12,7 @@ session_regenerate_id();
     <link rel="stylesheet" href="socialcss.css">
     <link href='https://fonts.googleapis.com/css?family=Krona One' rel='stylesheet'>
     <style>
-       body{ background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/08/21/yellow-grunge-on-dark-blue-background-Graphics-77367891-1.jpg');}
+       body{ background-image: url('https://media.discordapp.net/attachments/1282670009868357682/1450141306767675534/i_made_this_so_you_dont_have_to.png?ex=694174d5&is=69402355&hm=f34b375a04b3c1b2e5e76ef1e2a2bedfc596a2983982c6c0551f3b16dfdb1f60&=&format=webp&quality=lossless');}
        table, th, td {
         }
         
@@ -23,7 +23,7 @@ session_regenerate_id();
         <div class="topnav">
             <p id="logo"><a href="main.php"> Toka Fitness</a></p>
             <p id="topnavbuttons">
-                <a href="fitportalthing.html">Fitness Portal</a>
+                <a href="#fitness portal">Fitness Portal</a>
                 <a href="videoapi.html">Fitness Videos</a>
                 <a href="api.html">My Diet Log</a>
                 <a href="socialpage.php">The Social</a>

@@ -20,7 +20,7 @@ if ($_SESSION ['account_loggedin'] == TRUE) {
     <link rel="stylesheet" href="mainstyle.css">
     <style>
         body {
-            background-image: url('https://gymequipment.co.uk/pub/media/magefan_blog/img_23-Blog-DumbbellsMix-opti.jpg');
+            background-image: url('https://pixabay.com/photos/weights-gym-dumbbell-gray-gym-3942914/');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -32,7 +32,7 @@ if ($_SESSION ['account_loggedin'] == TRUE) {
     <div class="topnav">
         <p id="logo"><a href="main.php"> Toka Fitness</a></p>
         <p id="topnavbuttons">
-            <a href="fitportalthing.html">Fitness Portal</a>
+            <a href="#fitness portal">Fitness Portal</a>
             <a href="videoapi.html">Fitness Videos</a>
             <a href="api.html">My Diet Log</a>
             <a href="socialpage.php">The Social</a>

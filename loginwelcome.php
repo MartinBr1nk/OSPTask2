@@ -12,7 +12,7 @@ session_regenerate_id();
         <link rel="stylesheet" href="mainstyle.css">
         <link href='https://fonts.googleapis.com/css?family=Krona One' rel='stylesheet'>
         <style>
-        body{ background-image: url('https://res-3.cloudinary.com/gll/image/upload/v1713880875/xta04aksf7jzgo9vq759.jpg');}
+        body{ background-image: url('https://pixabay.com/photos/weights-gym-dumbbell-gray-gym-3942914/');}
         img { border-radius: 50%;}
         text-color:"white"
         </style>
