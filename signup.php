@@ -30,7 +30,7 @@ if ($_SESSION ['account_loggedin'] == TRUE) {
         <div class="topnav">
             <p id="logo"><a href="main.php"> Toka Fitness</a></p>
             <p id="topnavbuttons">
-                <a href="#fitness portal">Fitness Portal</a>
+                <a href="fitportalthing.html">Fitness Portal</a>
                 <a href="videoapi.html">Fitness Videos</a>
                 <a href="api.html">My Diet Log</a>
                 <a href="">The Social</a>
