@@ -19,7 +19,8 @@
     </style>
 </head>
 
-<body>
+<body onclick= "alert('Caution! By Clicking past this message you accept the cookies we use to keep this site running.')">
+
     <div class="cool_box">
         <div class="topnav">
             <p id="logo"><a href="main.php"> Toka Fitness</a></p>

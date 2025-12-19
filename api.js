@@ -33,7 +33,7 @@ console.log('api.js loaded successfully'); // Confirmation message to indicate t
      }
       // Spoonacular API from your account
      const apiKey = 'f1b9ab7fa6914cd697f17ec9fe468772' ;  
-     const totalRecipes = 9; // Adjust on total meals
+     const totalRecipes = 21; // Adjust on total meals
      const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?query=${encodeURIComponent(query)}&number=${totalRecipes}&addRecipeNutrition=true&apiKey=${apiKey}`;
      //requested data from the API as JSON file
     
