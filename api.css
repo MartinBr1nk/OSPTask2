@@ -183,3 +183,23 @@ footer {
   color:#cde402;
   text-align: center;
 }
+
+.post-box{
+  width:90%;
+  padding:40px;
+  border-style: solid;
+  color: yellow;
+  background: #0b0138;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  margin:auto;
+  margin-top:10rem;
+  
+}
+
+.generated-meals {
+  width: 2200px;
+  padding:0%;
+  table-layout: fixed;
+  
+}
