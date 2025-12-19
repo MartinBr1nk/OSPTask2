@@ -9,10 +9,10 @@ session_regenerate_id();
 
     <head>
 
-        <link rel="stylesheet" href="mainstyle.css">
+        <link rel="stylesheet" href="loginstyle.css">
         <link href='https://fonts.googleapis.com/css?family=Krona One' rel='stylesheet'>
         <style>
-        body{ background-image: url('https://pixabay.com/photos/weights-gym-dumbbell-gray-gym-3942914/');}
+        body{ background-image: url('https://cdn.pixabay.com/photo/2019/01/20/00/48/weights-3942914_960_720.jpg');}
         img { border-radius: 50%;}
         text-color:"white"
         </style>
@@ -21,7 +21,7 @@ session_regenerate_id();
             <div class="topnav">
                 <p id="logo"><a href="main.php"> Toka Fitness</a></p>
                 <p id="topnavbuttons">
-                    <a href="#fitness portal">Fitness Portal</a>
+                    <a href="fitportalthing.html">Fitness Portal</a>
                     <a href="videoapi.html">Fitness Videos</a>
                     <a href="api.html">My Diet Log</a>
                     <a href="socialpage.php">The Social</a>
@@ -30,7 +30,7 @@ session_regenerate_id();
             </div>
     <div class = "manage-box">
     <center> 
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rollingstone.com%2Fwp-content%2Fuploads%2F2018%2F09%2FR1320_QA_Damon_A.jpg%3Fw%3D1581%26h%3D1054%26crop%3D1&f=1&nofb=1&ipt=0ae513f2e2e6663d715a50706d4ddc9fe564bb88c3d249252db9e696e89dc16a" alt="You (very cool)" style=width:200px;height:125px> 
+            <img src="https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331256_960_720.png" width="300" height="200"> 
             <p style="color:white;"> <br> Your Name: <?php echo $_SESSION["account_name"] ?> </p>
             <?php
             if ($_SESSION["Membership"] == true ) {

@@ -124,3 +124,19 @@ button:hover{
   margin-top:18rem;
   
 }
+
+
+.terms-box{
+  width:60%;
+  padding:40px;
+  border-style: solid;
+  background: #0b0138;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  margin:auto;
+  margin-top:10rem;
+  
+}
+
+
+img {border-radius: 25%;}

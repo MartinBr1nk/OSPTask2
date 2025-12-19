@@ -1,4 +1,4 @@
-console.log('RecipesSearch.js loaded successfully'); // Confirmation message to indicate the script has loaded
+console.log('api.js loaded successfully'); // Confirmation message to indicate the script has loaded
    
     //Select HTML elements
    const searchInput = document.querySelector('#searchInput');
@@ -31,7 +31,7 @@ console.log('RecipesSearch.js loaded successfully'); // Confirmation message to 
        alert('Please enter a search term.');
        return;
      }
-     // Spoonacular API from your account
+      // Spoonacular API from your account
      const apiKey = 'f1b9ab7fa6914cd697f17ec9fe468772' ;  
      const totalRecipes = 9; // Adjust on total meals
      const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?query=${encodeURIComponent(query)}&number=${totalRecipes}&addRecipeNutrition=true&apiKey=${apiKey}`;
@@ -53,37 +53,39 @@ console.log('RecipesSearch.js loaded successfully'); // Confirmation message to 
          let foodResults = data.results;
          
 
-            let mealOneMonday = document.querySelector("#MealOneMonday"); // select the correct ID for the table
-            let mealOneNutrition = foodResults[0].nutrition.nutrients; // get nutrition info for first meal
-            mealOneMonday.innerHTML = `${foodResults[0].title}
-            <img src= "${foodResults[0].image}">  
-            <p>Calories: ${mealOneNutrition.find(n => n.name === 'Calories').amount} kcal</p> <br>
-            <p>Protein: ${mealOneNutrition.find(n => n.name === 'Protein').amount} g</p> <br>
-            `;
+          const mealCells = [
+          "MealOneMonday", "MealTwoMonday", "MealThreeMonday",
+          "MealOneTuesday", "MealTwoTuesday", "MealThreeTuesday",
+          "MealOneWednesday", "MealTwoWednesday", "MealThreeWednesday",
+          "MealOneThursday", "MealTwoThursday", "MealThreeThursday",
+          "MealOneFriday", "MealTwoFriday", "MealThreeFriday",
+          "MealOneSaturday", "MealTwoSaturday", "MealThreeSaturday",
+          "MealOneSunday", "MealTwoSunday", "MealThreeSunday"
+          ];
 
-            let mealTwoMonday = document.querySelector("#MealTwoMonday");
-            mealTwoMonday.innerHTML = `${foodResults[1].title}`;
+          mealCells.forEach((id, index) => {
+            const meal = foodResults[index];
+            const cell = document.querySelector(`#${id}`);
 
-            let mealThreeMonday = document.querySelector("#MealThreeMonday");
-            mealThreeMonday.innerHTML = `${foodResults[2].title}`;
+            if (!meal) return;
 
-            let mealOneTuesday = document.querySelector("#MealOneTuesday");
-            mealOneTuesday.innerHTML = `${foodResults[3].title}`;
+            const nutrients = meal.nutrition?.nutrients || [];
+            const calories = nutrients.find(n => n.name === "Calories")?.amount ?? "N/A";
+            const protein = nutrients.find(n => n.name === "Protein")?.amount ?? "N/A";
+            const sugar = nutrients.find(n => n.name === "Sugar")?.amount ?? "N/A";
+            const carbs = nutrients.find(n => n.name === "Carbohydrates")?.amount ?? "N/A";
+            const fat = nutrients.find(n => n.name === "Fat")?.amount ?? "N/A";
 
-            let mealTwoTuesday = document.querySelector("#MealTwoTuesday");
-            mealTwoTuesday.innerHTML = `${foodResults[4].title}`;
-
-            let mealThreeTuesday = document.querySelector("#MealThreeTuesday");
-            mealThreeTuesday.innerHTML = `${foodResults[5].title}`;
-
-            let mealOneWednesday = document.querySelector("#MealOneWednesday");
-            mealOneWednesday.innerHTML = `${foodResults[6].title}`;
-
-            let mealTwoWednesday = document.querySelector("#MealTwoWednesday");
-            mealTwoWednesday.innerHTML = `${foodResults[7].title}`;
-
-            let mealThreeWednesday = document.querySelector("#MealThreeWednesday");
-            mealThreeWednesday.innerHTML = `${foodResults[8].title}`;
+            cell.innerHTML = `
+              <h4>${meal.title}</h4>
+              <img src="${meal.image}" alt="${meal.title}" />
+              <p>Calories: ${calories}</p>
+              <p>Protein: ${protein} g</p>
+              <p>Sugar ${sugar} g</p>
+              <p>Carbs ${carbs} g</p>
+              <p>Fat ${fat} g</p>
+          `;
+          });
             
             
        })
@@ -92,3 +94,7 @@ console.log('RecipesSearch.js loaded successfully'); // Confirmation message to 
          resultsMessage.innerHTML = 'An error occurred while fetching recipes. Please try again later.';
        });
    }
+
+
+
+

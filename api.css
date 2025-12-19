@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Krona One'; font-size: 22px;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #00124e, #fde400);
+  background-color: #00124e;
   color: white;
 }
 
@@ -114,7 +114,7 @@ th, td {
 }
 
 th {
-  background: linear-gradient(90deg, #04003b, #fbff00,  #0a0046);;
+  background-color:#04003b;
   color: white;
   text-transform: uppercase;
 }

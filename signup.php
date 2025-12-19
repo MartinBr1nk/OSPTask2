@@ -17,7 +17,7 @@ if ($_SESSION ['account_loggedin'] == TRUE) {
         <link rel="stylesheet" href="mainstyle.css">
         <style>
             body{ 
-                background-image: url('https://pixabay.com/photos/weights-gym-dumbbell-gray-gym-3942914/');
+                background-image: url('https://cdn.pixabay.com/photo/2019/01/20/00/48/weights-3942914_960_720.jpg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
